@@ -1,0 +1,263 @@
+<!-- The code is HTML code by the help of html i give structure to my portfolio page  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+
+    <!-- -------------HEADER NAME AND LINKS------------    -->
+
+    <nav class="header-name flex">
+        <a href="#"><h2>AMIT RAWAT</h2></a>
+        <ul class="flex">
+            <a href="#home"><li class="nav-link">Home</li></a>
+            <a href="#about"><li class="nav-link">About</li></a>
+            <a href="#skills"><li class="nav-link">Skills</li></a>
+            <a href="#projects"><li class="nav-link">Projects</li></a>
+            <a href="#resume"><li class="nav-link">Resume</li></a>
+            <a href="#contact"><li class="nav-link">Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- --------------PORTFOLIO SECTION------------- -->
+
+    <section class="home-page" id="home">
+        <div class="my-info flex">
+            <div class="info-links-btn flex">
+                <div class="name-tag-info">
+                    <h3>Hello, It's Me</h3>
+                    <h1>Amit Rawat</h1>
+                    <h3>And I'm a <a href="https://en.wikipedia.org/wiki/Web_development" style="color: #01b1fc; font-weight: 500;">Web Developer</a></h3>
+                    <p>HTML/CSS/React Js/JavaScript/Django.</p>
+                </div>
+
+                <div class="hire-talk-btn flex">
+                    <a href="#" class="response-btn flex hire-btn">Hire Me</a>
+                    <a href="#" class="response-btn flex talk-btn">Let's Talk</a>
+                </div>
+            </div>
+
+            <img src="./assets/my_photo.jpg" alt="My Photo">
+        </div>
+    </section>
+
+<!-- ------------------ABOUT SECTION------------------- -->
+
+    <section class="about-me flex" id="about">
+        <img src="./assets/my_photo_2.jpg" alt="My photo">
+        <div class="about-info flex">
+            <div class="heading-about">
+                <h1>About <span style="color: #01b1fc; font-weight: 500;">Me</span></h1>
+                <h3>Web Developer</h3>
+                <p>Entry-Level Web Developer with a strong passion for web development and a commitment to continuous learning and improvement. Currently in the process of acquiring a solid foundation in web development technologies and seeking an opportunity to apply and enhance my skills in a professional environment. Eager to contribute to dynamic projects, collaborate with experienced developers, and leverage.
+                </p>
+            </div>
+            <a href="#" class="read_more-btn flex">Read More</a>
+        </div>
+    </section>
+
+    <!-- ---------------KEY SKILLS SECTION-------------- -->
+
+    <section class="key-skills flex" id="skills">
+        <center><h1>MY SKILLS</h1></center>
+        <div class="skill-box flex">
+            <div class="skill flex">
+                <img src="./assets/html.png" alt="html">
+                <h3>HTML 5</h3>
+                <div class="skill-level">
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>                
+            </div>
+            <div class="skill flex">
+                <img src="./assets/css.png" alt="css">
+                <h3>CSS 3</h3>
+                <div class="skill-level">
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>                
+            </div>
+            <div class="skill flex">
+                <img src="./assets/javascript.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>
+            </div>
+        </div>
+        <div class="skill-box flex">
+            <div class="skill flex">
+                <img src="./assets/django.png" alt="Django">    
+                <h3>DJango</h3>
+                <div class="skill-level">
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>
+            </div>
+            <div class="skill flex">
+                <img src="./assets/python.png" alt="python">
+                <h3>Python</h3>
+                <div class="skill-level">
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>
+            </div>
+            <div class="skill flex">
+                <img src="./assets/c++.png" alt="c++">
+                <h3>C++</h3>
+                <div class="skill-level">
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-solid fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------PROJECT SECTION-------------- -->
+
+    <section class="my-project flex" id="projects">
+        <h1>MY PROJECTS</h1>
+        <div class="project-box flex">
+            <div class="project flex">
+                <img src="./assets/usabilityhub.png" alt="usabilityHub clone">
+                <h3>usabilityHub Clone</h3>
+                <center><p>This is HTML and CSS-cloned landing page of Usability Hub's website. It mimics layout, navigation, and aesthetics, with responsive design for various devices. The page showcases the developer's expertise, ensuring a user-friendly and visually accurate replication of the original site.</p></center>               
+            </div>
+            <div class="project flex">
+                <img src="./assets/Hotstar.png" alt="Hotstar clone">
+                <h3>Disney plus Hotstar Clone</h3>
+                <center><p>This is HTML, CSS and JavaScript-cloned landing page of Disney plus Hotstar website. It mimics layout, navigation, and aesthetics, with responsive design for various devices. The page showcases the developer's expertise, ensuring a user-friendly and visually accurate replication of the original site.</p></center>               
+            </div>
+            <div class="project flex">
+                <img src="./assets/kpmg.png" alt="KPMG clone">
+                <h3>KPMG Clone</h3>
+                <center><p>This is HTML, CSS and JavaScript-cloned landing page of KPMG website. It mimics layout, navigation, and aesthetics, with responsive design for various devices. The page showcases the developer's expertise, ensuring a user-friendly and visually accurate replication of the original site.</p></center>
+            </div>
+        </div>
+        <div class="project-box flex">
+            <div class="project flex">
+                <img src="./assets/django_project.png" alt="Django project">    
+                <h3>My Awesome Cart</h3>
+                <center><p>"My Awesome Cart," a personal Django project, is a dynamic and user-friendly e-commerce website. Designed and developed independently, it showcases skills in web development. With features like product listings, shopping carts.</p></center>
+            </div>
+            <div class="project flex">
+                <img src="./assets/python_project.png" alt="python project">
+                <h3>Python projects</h3>
+                <center><p>My Python projects, personally crafted, demonstrate my programming prowess. These self-initiated endeavors cover a diverse range of applications, showcasing my skills in automation, data analysis, web development, and more.</p></center>
+            </div>
+            <div class="project flex">
+                <img src="./assets/js_project.png" alt="JavaScript project">
+                <h3>JavaScript Projects</h3>
+                <center><p>My JavaScript projects, personally crafted, demonstrate my programming prowess. These self-initiated endeavors cover a diverse range of applications, showcasing my skills in automation, web development, and more.</p></center>
+            </div>
+        </div>
+        <div class="project-box flex">
+            <div class="project flex">
+                <img src="./assets/calculator.png" alt="calculator project">
+                <h3>Calculator Project</h3>
+                <center><p>My calculator landing page combines HTML, CSS, and JavaScript. It offers a sleek and functional user interface for performing arithmetic operations. This project demonstrates my proficiency in web development.</p></center>           
+            </div>
+            <div class="project flex">
+                <img src="./assets/supercart.png" alt="SuperCart">
+                <h3>SuperCart Website</h3>
+                <center><p>SuperCart, crafted by me using HTML and CSS, is a sleek and user-friendly e-commerce website. This project highlights my web development skills, featuring an attractive design and intuitive user interface for seamless shopping application.</p></center>               
+            </div>
+            <div class="project flex">
+                <img src="./assets/portfolio.png" alt="portfolio">
+                <h3>My Portfolio Website</h3>
+                <center><p>My Portfolio, crafted by me using HTML and CSS, is a sleek and user-friendly e-commerce website. This project highlights my web development skills, featuring an attractive design and intuitive user interface for seamless my information.</p></center>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------RESUME SECTION----------- -->
+
+    <section class="resume-section flex" id="resume">
+        <div class="resume-container flex">
+            <h1>My Resume</h1>
+            <p>Download Resume by clicking  download button!</p>
+            <a href="./assets/resume_pdf.pdf" download="Amit Resume">
+                <button class="download-btn">Download PDF</button>
+            </a>
+        </div>
+        <img src="./assets/resume.png" alt="Resume">
+    </section>
+
+    <!-- --------------------CONTACT SECTION-------------- -->
+
+    <section class="contact-section flex" id="contact">
+        <div class="contact-container">
+            <center><h2>Contact Me</h2></center>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="social-links flex">
+            <center><h2>Also Contact Me on:</h2></center>
+            <div class="social-container flex">
+                <a href="https://www.facebook.com/profile.php?id=100058084117604" class="social-icons fb-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100058084117604" class="contact-links">facebook/Amit Rawat</a>
+            </div>
+            <div class="social-container flex">
+                <a href="https://www.instagram.com/theamitrawat16/" class="social-icons insta-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.instagram.com/theamitrawat16/" class="contact-links">instagram/theamitrawat16</a>
+            </div>
+            <div class="social-container flex">
+                <a href="https://twitter.com/theamitrawat16" class="social-icons tw-icon"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://twitter.com/theamitrawat16" class="contact-links">twitter/@theamitrawat16</a>
+            </div>
+            <div class="social-container flex">
+                <a href="https://www.linkedin.com/in/theamitrawat/" class="social-icons in-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/theamitrawat/" class="contact-links">linkedin/theamitrawat</a>
+            </div>
+            <div class="social-container flex">
+                <a href="https://mail.google.com/mail/u/0/" class="social-icons in-icon"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://mail.google.com/mail/u/0/" class="contact-links">email - theamitrwt@gamil.com</a>
+            </div>
+            <div class="social-container flex">
+                <a href="https://web.whatsapp.com/" class="social-icons in-icon"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://web.whatsapp.com/" class="contact-links">Whatsapp - 8684802980</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------FOOTER SECTION------------- -->
+
+    <footer class="footer-section flex">
+        <p>&copy;2023-2024 My Portfolio Page HTML & CSS Template. All rights reserved. Powered by <a href="https://github.com/theamitrawat" style="color: #01b1fc;">@theamitrawat.</a></p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

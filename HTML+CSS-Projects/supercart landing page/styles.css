@@ -1,0 +1,775 @@
+/* The code is a CSS stylesheet that defines the styling for various sections of a website. It includes styles for the navbar, search navbar, carousel section, item for sell section, grocery item box section, best sell section, basic detail section, help to find item section, payments and social media section, and footer section. The code sets the font family, background colors, widths, heights, margins, padding, borders, and other visual properties for different elements on the website. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #fff;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ NAVBAR SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    padding: 0 4%;
+    background: linear-gradient(131deg, rgba(2,48,11,1) 37%, rgba(9,64,16,1) 67%, rgba(6,106,11,1) 91%);
+    z-index: 9;
+}
+.brand-logo{
+    width: 50px !important;
+    height: auto !important;
+}
+
+.brand-logo:hover{
+    cursor: pointer;
+}
+
+.nav-links{
+    margin-top:10px;
+    display:flex;
+}
+
+.nav-items:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.nav-items a{
+    margin-left: 20px;
+    text-transform: capitalize;
+    color:#fff;
+    opacity: 0.9;
+}
+.right-container {
+    width: 8vw;
+}
+.icon{
+    color: white;
+    padding: 40%;
+}
+.icon:hover{
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~SEARCH NAVBAR SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.search-navbar{
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    padding: 0 4%;
+}
+
+.super_logo{
+    width: 11rem;
+    height: auto;
+}
+
+.search-box{
+    border: 1.5px solid green;
+    background:transparent;
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.search-box:focus {
+    width: 400px;
+}
+
+.search-icon{
+    color: rgba(2,48,11,1);
+    font-size: 1.4rem;
+}
+
+.location-icon{
+    color: green;
+}
+
+.location{
+    gap: 5px;
+    border-radius: 5px;
+    background: #f6f6f6;
+    padding: 0.5%;
+    text-decoration: none;
+    color: green;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.location:focus{
+    cursor: pointer;
+    border:2px solid green;
+}
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ COROUSEL SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.corousel-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 87.4vh;
+    padding: 0.5% 4%;
+}
+
+.corousel-section{
+    display: flex;
+    background-image: url(./images/superbanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.corousel-section:hover{
+    border: 1.5px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.corousel-msg-btn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 20px;
+    justify-content: center; 
+    color: black;
+}
+
+.corousel-msg-btn h1{
+    font-family: 'Asap Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.corousel-msg-btn p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-left: 0;
+}
+.corousel-msg-btn button{
+    margin-top: 20px;
+    width: 180px;
+    height: 45px;
+    font-size: 1.3rem;
+    color:#fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+}
+
+.corousel-msg-btn button:hover{
+    background-color:rgb(7, 80, 7);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ ITEM FOR SELL SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.item-list-container{
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+}
+
+.item-list-container h2{
+    color: rgb(7, 80, 7);
+}
+
+.con-heading{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.item-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 16vw;
+    height:36vh;
+    padding: 1% 0;
+}
+
+.item:hover{
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+.item img{
+    width: 10vw;
+    height: auto;
+}
+
+.price-cart-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11vw;
+    height: auto;
+}
+
+.cart-btn{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background:green;
+    padding:2% 5%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.cart-btn:focus{
+    background-color: rgb(5, 67, 5);
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ GROCERY ITEM BOX SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.grocery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 43vh;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.grocery-box1{
+    background-image: url(./images/vegies\ bag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 44%;  
+    height: auto;
+    color: rgb(7, 80, 7);
+}
+
+.grocery-box1:hover{
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.grocery-box2{
+    background-image: url(./images/bread\ bag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 44%;  
+    height: auto;
+    color: rgb(7, 80, 7);
+}
+
+.grocery-box2:hover{
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.grocery-item-box {
+    display: flex;
+    width: 25vw;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+
+.grocery-item-box h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.grocery-item-box p{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: 0;
+}
+.shop-btn{
+    margin-top: 10px;
+    width: 105px;
+    height: 40px;
+    font-size: 1rem;
+    padding: 0 2%;
+    color:#fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+}
+
+.shop-btn:hover{
+    background-color:rgb(7, 80, 7);
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ BEST SELL SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.best-sells-container{
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+}
+
+.best-sells-container h2{
+    margin: 1rem 0;
+    color: rgb(7, 80, 7);
+}
+
+.best-sells-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.best-sell-item{
+    border: 0.5px solid green;
+    border-radius: 8px;
+    flex-direction: column;
+    width: 24%;
+    height:70vh;
+    padding: 1% 0;
+}
+
+.best-sell-item:hover{
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+.best-sell-poster{
+    background-image: url(./images/coffee\ poster.jpg);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24%;
+    height:70vh;
+}
+
+.best-sell-poster:hover{
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+.best-sell-item img{
+    margin-top: 20px;
+    width: 15vw;
+    height: auto;
+}
+
+.best-sell-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16vw;
+    height: auto;
+}
+
+.rating{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.sell-cart-btn{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background:green;
+    padding:2% 26%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sell-cart-btn:focus{
+    background-color: rgb(5, 67, 5);
+}
+
+.poster-item-box{
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.poster-item-box h1 {
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-left: 0;
+}
+
+.poster-item-box p {
+    font-weight: 300;
+    font-size: 0.95rem;
+    margin-left: 0;
+}
+
+.poster-item-box button {
+    width: 105px;
+    height: 35px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+}
+
+.poster-item-box button:hover{
+    background-color:rgb(7, 80, 7);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ BASIC DETAIL SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.policy-section{
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.policy-box-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+    height: 40vh;
+    padding: 2% 2%;
+}
+
+.policy-box-links:hover{
+    border: 1px solid green;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.policy-box-links i{
+    font-size: 2.7rem;
+    color: green;
+}
+
+.policy-box-links h3{
+    color: rgb(6, 41, 6);
+    font-size: 1.2rem;
+}
+.policy-box-links p{
+    color: rgb(6, 41, 6);
+    font-size: 0.9rem;
+}
+
+
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ HELP TO FIND ITEM SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.help-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    background-color:#dedede;
+    margin-top: 5px;
+}
+
+.items-list-store{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.more-item-list{
+    margin-top: 55px;
+}
+
+.items-list-store ul li {
+    line-height: 35px;
+}
+
+.items-list-store ul li:hover{
+    text-decoration: underline;
+    color: rgb(7, 54, 7);
+}
+
+.main-heading {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #05069d;
+}
+
+.sub-heading {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000701;
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ PAYMENTS AND SOCIAL MEDIA SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+.payment-social-container{
+    border-top: 1px solid rgb(59, 59, 66);
+    border-bottom: 1px solid rgb(59, 59, 66);
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+}
+
+.payments-method{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: 10vh;
+}
+
+.img-1{
+    width: 4.2vw;
+    height: auto
+}
+
+.img-1:hover{
+    width: 5vw;
+}
+
+.img-2{
+    width: 3.2vw;
+    height: auto
+}
+
+.img-2:hover{
+    width: 4vw;
+}
+
+.img-3{
+    width: 1.7vw;
+    height: auto
+}
+
+.img-3:hover{
+    width: 2.5vw;
+}
+
+.img-4{
+    width: 2.4vw;
+    height: auto
+}
+
+.img-4:hover{
+    width: 3.2vw;
+}
+
+.img-5{
+    width:1.2vw;
+    height: auto
+}
+
+.img-5:hover{
+    width: 2vw;
+}
+
+.img-6{
+    width: 3.2vw;
+    height: auto
+}
+
+.img-6:hover{
+    width: 4vw;
+}
+
+.social-links{
+    width: 47%;
+    height: 10vh;
+}
+
+.appstore,.playstore{
+    background-color: black;
+    border-radius: 8px;
+    width: 11vw;
+    height: 8vh;
+}
+
+.appstore:hover,.playstore:hover{
+    width: 12vw;
+    height: 9vh;
+}
+
+.payments-method a, .social-links a{
+    color: #fff;
+}
+
+.appstore i{
+    font-size: 2rem;
+    float: left;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 9%;
+}
+
+.playstore i {
+    font-size: 1.6rem;
+    float: left;
+    margin-top: 9%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.appstore p, .playstore p {
+    font-size: 0.55rem;
+    margin-top: 4px;
+    font-weight: 200;
+}
+.appstore h4,.playstore h4{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* ----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~ FOOTER SECTION ~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------- */
+
+footer{
+    width: 100%;
+    height: 20vh;
+    padding: 0 4%;
+    float: inline-end;
+}
+
+.copyright{
+    width: 47%;
+    font-size: 0.8rem;
+    color: #6f6e6e;
+}
+
+.copyright a{
+    color: black;
+}
+
+.copyright a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.follow-links{
+    width: 16%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.follow-links p{
+    font-size: 0.8rem;
+    color: #6f6e6e;
+}
+
+.fb{
+    font-size: 1.4rem;
+    color: midnightblue;
+    padding: 25% 50%;
+}
+
+.fb:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.tw{
+    font-size: 1.5rem;
+    color: black;
+    padding: 10%;
+}
+
+.tw:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+.insta{
+    font-size: 1.5rem;
+    color: purple;
+    padding: 15%;
+}
+
+.insta:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}

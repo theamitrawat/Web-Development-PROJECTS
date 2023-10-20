@@ -1,0 +1,39 @@
+<!-- The given code is a HTML code that defines the structure for a calculator interface -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Welcome! Do Your Calculations Here.</h1>
+        <div id="calculator">
+            <input type="text" id="calc-display" readonly>
+            <div class="input-btn">
+                <input type="button" class="btn" value="(" onclick="appendToDisplay('(')">
+                <input type="button" class="btn" value=")" onclick="appendToDisplay(')')">
+                <input type="button" class="btn" value="%" onclick="appendToDisplay('%')">
+                <input type="button" class="btn" value="/" onclick="appendToDisplay('/')">
+                <input type="button" class="btn" value="7" onclick="appendToDisplay('7')">
+                <input type="button" class="btn" value="8" onclick="appendToDisplay('8')">
+                <input type="button" class="btn" value="9" onclick="appendToDisplay('9')">
+                <input type="button" class="btn" value="+" onclick="appendToDisplay('+')">
+                <input type="button" class="btn" value="4" onclick="appendToDisplay('4')">
+                <input type="button" class="btn" value="5" onclick="appendToDisplay('5')">
+                <input type="button" class="btn" value="6" onclick="appendToDisplay('6')">
+                <input type="button" class="btn" value="-" onclick="appendToDisplay('-')">
+                <input type="button" class="btn" value="1" onclick="appendToDisplay('1')">
+                <input type="button" class="btn" value="2" onclick="appendToDisplay('2')">
+                <input type="button" class="btn" value="3" onclick="appendToDisplay('3')">
+                <input type="button" class="btn" value="*" onclick="appendToDisplay('*')">
+                <input type="button" class="btn" value="C" onclick="clearDisplay()">
+                <input type="button" class="btn" value="0" onclick="appendToDisplay('0')">
+                <input type="button" class="btn" value="." onclick="appendToDisplay('.')">
+                <input type="button" class="btn" value="=" onclick="calculate()">  
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

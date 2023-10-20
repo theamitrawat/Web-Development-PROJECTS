@@ -1,0 +1,472 @@
+<!-- The code is HTML code that defines the structure for various sections of a website. It includes structure for the navbar, search navbar, carousel section, item for sell section, grocery item box section, best sell section, basic detail section, help to find item section, payments and social media section, and footer section. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My awesome cart - online shoping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ NAVBAR SECTION ~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <nav class="navbar space-btw">
+        <img src="./images/cart_logo.png" alt=" brand logo" class="brand-logo" >
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">Home</a></li>
+            <li class="nav-items"><a href="#">Shop</a></li>
+            <li class="nav-items"><a href="#">Stores</a></li>
+            <li class="nav-items"><a href="#">Contact Us</a></li>
+            <li class="nav-items"><a href="#">Premium</a></li>
+        </ul>
+        <div class="right-container space-btw">
+            <a href="#"><i class="fa-solid fa-heart icon"></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping icon"></i></a>
+            <a href="#"><i class="fa-solid fa-right-to-bracket icon"></i></a>
+        </div>
+    </nav>
+    
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ SEARCH NAVBAR SECTION ~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+    
+    <section  class="search-navbar space-btw">
+        <img src="./images/super_logo.png" alt="super cart" class="super_logo">
+        <div class="search">
+            <input type="text" class="search-box" placeholder="  search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <a href="#" class="location flex"><i class="fa-solid fa-location-dot location-icon"></i>location</a>
+    </section>
+    
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~~~ COROUSEL SECTION ~~~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="corousel-container">
+        <div class="corousel-section">
+            <div class="corousel-msg-btn">
+                <h1>SuperCart Daily<br>Fresh Grocery</h1>
+                <p>Introduced a new model for online grocery shopping<br>and convenient home delivery.</p>
+                <button>Shop Now <i class="fa-solid fa-arrow-right shop-icon"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ ITEM FOR SELL SECTION ~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="item-list-container">
+        <h2>Featured Items</h2>
+        <div class="item-list">
+            <div class="item">
+                <img src="./images/Makhana.png" alt="Makhana">
+                <p>Farmley Cream</p>
+                <div class="price-cart-link">
+                    <h3>Rs.79</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+    
+            </div>
+            <div class="item">
+                <img src="./images/chickpea.png" alt="Crisps">
+                <p>Chickpea Crisps</p>
+                <div class="price-cart-link">
+                    <h3>Rs.50</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/chips.png" alt="Blue Lays">
+                <p>Blue Lays</p>
+                <div class="price-cart-link">
+                    <h3>Rs.20</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/kurkure.png" alt="kurkure">
+                <p>kurkure</p>
+                <div class="price-cart-link">
+                    <h3>Rs.20</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/binge.png" alt="bringe chips">
+                <p>Binge Chips</p>
+                <div class="price-cart-link">
+                    <h3>Rs.50</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/bhujia.png" alt="">
+                <p>Haldiram Bhujia</p>
+                <div class="price-cart-link">
+                    <h3>Rs.25</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ GROCERY ITEM BOX SECTION ~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="grocery-container">
+        <div class="grocery-box1">
+            <div class="grocery-item-box">
+                <h3>Fruits & Vegetables</h3>
+                <p>Get Upto 30% off</p>
+                <button class="shop-btn">Shop Now</button>
+            </div>
+        </div>
+        <div class="grocery-box2">
+            <div class="grocery-item-box">
+                <h3>Freshly Backed Buns</h3>
+                <p>Get Upto 25% off</p>
+                <button class="shop-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ POPULAR PRODUCT SECTION ~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="item-list-container">
+        <h2 class="con-heading">Popular Products</h2>
+        <div class="item-list-div">
+            <div class="item-list">
+            <div class="item">
+                <img src="./images/rice.png" alt="Rice">
+                <p>Basmati Rice</p>
+                <div class="price-cart-link">
+                    <h3>Rs.690</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+    
+            </div>
+            <div class="item">
+                <img src="./images/oil.png" alt="Oil">
+                <p>Sunflower Oil</p>
+                <div class="price-cart-link">
+                    <h3>Rs.660</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/black water.png" alt="Black Water">
+                <p>Black Water</p>
+                <div class="price-cart-link">
+                    <h3>Rs.100</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/coca-cola.png" alt="Cold drink">
+                <p>Coca-Cola</p>
+                <div class="price-cart-link">
+                    <h3>Rs.90</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/egg.png" alt="Eggs">
+                <p>Healthy Eggs</p>
+                <div class="price-cart-link">
+                    <h3>Rs.85</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/condom.png" alt="Condom">
+                <p>Durex Condom</p>
+                <div class="price-cart-link">
+                    <h3>Rs.195</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item-list-div">
+            <div class="item-list">
+            <div class="item">
+                <img src="./images/peas.png" alt="matar">
+                <p>Green Peas</p>
+                <div class="price-cart-link">
+                    <h3>Rs.192</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+    
+            </div>
+            <div class="item">
+                <img src="./images/icecream.png" alt="IceCream">
+                <p>Papacream Icecream</p>
+                <div class="price-cart-link">
+                    <h3>Rs.194</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/protien chocolate.png" alt="Protein Chocolate">
+                <p>MuscleBlaze Chocolate</p>
+                <div class="price-cart-link">
+                    <h3>Rs.380</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/detergent.png" alt="Surf Excel">
+                <p>Surf Excel</p>
+                <div class="price-cart-link">
+                    <h3>Rs.585</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/shampoo.png" alt="Shampoo">
+                <p>Tresemme Shampoo</p>
+                <div class="price-cart-link">
+                    <h3>Rs.227</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/pad.png" alt="Padds">
+                <p>Whisper Pads</p>
+                <div class="price-cart-link">
+                    <h3>Rs.585</h3>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ BEST SELL SECTION ~~~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="best-sells-container">
+        <h2 class="con-heading">Daily Best Sells</h2>
+        <div class="best-sells-list">
+            <div class="best-sell-poster">
+                <div class="poster-item-box">
+                    <h1>100% Organic<br>Coffee Beans.</h1>
+                    <p>Get the best deal before<br>close.</p>
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="best-sell-item space-btw">
+                <img src="./images/dahi.png" alt="dahi">
+                <p>milk & butter</p>
+                <h4>Amul Masti Dahi</h4>
+                <div class="best-sell-cart">
+                    <h4>Rs.34</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        4.5
+                    </div>
+                </div>
+                <a href="#" class="sell-cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+            </div>
+            <div class="best-sell-item space-btw">
+                <img src="./images/paneer.png" alt="paneer">
+                <p>milk & butter</p>
+                <h4>Amul Malai Paneer Fresh</h4>
+                <div class="best-sell-cart">
+                    <h4>Rs.90</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        4.5
+                    </div>
+                </div>
+                <a href="#" class="sell-cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+            </div>
+            <div class="best-sell-item space-btw">
+                <img src="./images/chocolate.png" alt="chocolate">
+                <p>Chocolate & Candy</p>
+                <h4>Amul Chocominis Chocolate</h4>
+                <div class="best-sell-cart">
+                    <h4>Rs.00</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        4.5
+                    </div>
+                </div>
+                <a href="#" class="sell-cart-btn"><i class="fa-solid fa-plus"></i> Add</a>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ BASIC DETAIL SECTION ~~~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+    
+    <section class="policy-section space-btw">
+            <div class="policy-box-links">
+                <i class="fa-solid fa-clock"></i>
+                <h3>10 minute grocery now</h3>
+                <p>Get your order delivered to your doorstep at the earliest from SuperCart pickup stores near you.</p>
+            </div>
+            <div class="policy-box-links">
+                <i class="fa-solid fa-gift"></i>
+                <h3>Best Prices & Offers</h3>
+                <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best prices & offers.</p>
+            </div>
+            <div class="policy-box-links">
+                <i class="fa-solid fa-box"></i>
+                <h3>Wide Assortment</h3>
+                <p>Choose from 5000+ productss across food, personal care, household, bakery, veg & other categories.</p>
+            </div>
+            <div class="policy-box-links">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>Easy Returns</h3>
+                <p>Not satisfied with a product?Return it at the doorstep & get a refund within hours. No questions asked policy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ HELP TO FIND ITEMS SECTION ~~~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="help-section">
+        <div class="items-list-store">
+            <ul>
+                <li ><a href="#" class="main-heading">Categories</a></li>
+                <li><a href="#" class="sub-heading">Vegetables & Fruits</a></li>
+                <li><a href="#" class="sub-heading">Breakfast & instant food</a></li>
+                <li><a href="#" class="sub-heading">Bakery & Biscuits</a></li>
+                <li><a href="#" class="sub-heading">Atta, rice & dal</a></li>
+                <li><a href="#" class="sub-heading">Sauces & spreads</a></li>
+                <li><a href="#" class="sub-heading">Organic & gourmet</a></li>
+                <li><a href="#" class="sub-heading">Baby care</a></li>
+                <li><a href="#" class="sub-heading">Cleaning essentials</a></li>
+                <li><a href="#" class="sub-heading">Personal care</a></li>
+            </ul>
+        </div>
+        <div class="items-list-store more-item-list">
+            <ul>
+                <li><a href="#" class="sub-heading"></a></li>
+                <li><a href="#" class="sub-heading">Dairy, bread & eggs</a></li>
+                <li><a href="#" class="sub-heading">Cold drinks & juices</a></li>
+                <li><a href="#" class="sub-heading">Tea,coffe & drinks</a></li>
+                <li><a href="#" class="sub-heading">Masala oil & more</a></li>
+                <li><a href="#" class="sub-heading">Chicken, meat & fish</a></li>
+                <li><a href="#" class="sub-heading">Paan corner</a></li>
+                <li><a href="#" class="sub-heading">Pharma & wellness</a></li>
+                <li><a href="#" class="sub-heading">Home & office</a></li>
+                <li><a href="#" class="sub-heading">Pet care</a></li>
+            </ul>
+        </div>
+        <div class="items-list-store">
+            <ul>
+                <li><a href="#" class="main-heading">Go to know us</a></li>
+                <li><a href="#" class="sub-heading">Company</a></li>
+                <li><a href="#" class="sub-heading">about</a></li>
+                <li><a href="#" class="sub-heading">Blog</a></li>
+                <li><a href="#" class="sub-heading">Help Center</a></li>
+                <li><a href="#" class="sub-heading">Our value</a></li>
+            </ul>
+        </div>
+        <div class="items-list-store">
+            <ul>
+                <li><a href="#" class="main-heading">For Consumers</a></li>
+                <li><a href="#" class="sub-heading">Payments</a></li>
+                <li><a href="#" class="sub-heading">Shipping</a></li>
+                <li><a href="#" class="sub-heading">Product Return</a></li>
+                <li><a href="#" class="sub-heading">FAQ</a></li>
+                <li><a href="#" class="sub-heading">Shop Checkout</a></li>
+            </ul>
+        </div>
+        <div class="items-list-store">
+            <ul>
+                <li><a href="#" class="main-heading">Become a Shopper</a></li>
+                <li><a href="#" class="sub-heading">Shopper Opportunities</a></li>
+                <li><a href="#" class="sub-heading">Become a Shopper</a></li>
+                <li><a href="#" class="sub-heading">Earnings</a></li>
+                <li><a href="#" class="sub-heading">Ideas & Guides</a></li>
+                <li><a href="#" class="sub-heading">New Retailers</a></li>
+            </ul>
+        </div>
+        <div class="items-list-store">
+            <ul>
+                <li><a href="#" class="main-heading">SuperCart Programm</a></li>
+                <li><a href="#" class="sub-heading">SuperCart Programm</a></li>
+                <li><a href="#" class="sub-heading">Gift Cards</a></li>
+                <li><a href="#" class="sub-heading">Promos & Coupons</a></li>
+                <li><a href="#" class="sub-heading">SuperCart Ads</a></li>
+                <li><a href="#" class="sub-heading">Career</a></li>
+            </ul>
+    </section>
+    
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ PAYMENTS AND SOCIAL MEDIA SECTION ~~~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <section class="payment-social-container space-btw">
+        <div class="payments-method">
+            <p>Payment Partners</p>
+            <img src="./images/amazon pay.png" alt="amazon pay" class="img-1">
+            <img src="./images/american express.png" alt="american express" class="img-2">
+            <img src="./images/mastercard.png" alt="mastercard" class="img-3">
+            <img src="./images/paypal.png" alt="paypal" class="img-4">
+            <img src="./images/visa.png" alt="visa" class="img-5">
+            <img src="./images/rupay.png" alt="rupay" class="img-6">
+        </div>
+        <div class="social-links space-btw">
+            <p>Get deliveries with SuperCart</p>
+            <a href="https://apps.apple.com/in/app/blinkit-grocery-in-minutes/id960335206" class="appstore">
+                <i class="fa-brands fa-apple"></i>
+                <p>Available on the</p>
+                <h4>AppStore</h4>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.bigbasket.mobileapp&hl=en-IN" class="playstore">
+                <i class="fa-brands fa-google-play"></i>
+                <p>Get it on</p>
+                <h4>GooglePlay</h4>
+            </a>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~~~ FOOTER SECTION ~~~~~~~~~~~~~~~~~~~~~~~~
+    ----------------------------------------------------------------->
+
+    <footer class="space-btw">
+        <div class="copyright">
+            <p>&copy;2023 - 2024 SuperCart eCommerce HTML & CSS Template. All rights reserved. Powered by <a href="https://github.com/theamitrawat">@theamitrawat.</a></p>
+        </div>
+        <div class="follow-links">
+            <p>follow us on</p>
+            <a href="https://www.facebook.com/profile.php?id=100058084117604"><i class="fa-brands fa-facebook-f fb"></i></a>
+            <a href="https://twitter.com/theamitrawat16"><i class="fa-brands fa-x-twitter tw"></i></a>
+            <a href="https://www.instagram.com/_instinct_life/"><i class="fa-brands fa-instagram insta"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</body>
+</html>
