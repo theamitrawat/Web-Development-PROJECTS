@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="start-btn">Start Quiz🥇</button>
+
+        <div class="quiz-box inactive">
+            <h1>Simple Quiz</h1>
+            <div class="ques-ans-box">
+                <h2 id="ques">1. What is your good name?</h2>
+                <div class="option-box">
+                    <button class="btn wrong-ans">Answer 1</button>
+                    <button class="btn correct-ans">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="next-box">
+                <span id="quest-tracer">1 - 5</span>
+                <button class="next-btn inactive">Next➡️</button>
+            </div>
+        </div>
+
+        <div class="result-box inactive">
+            <h1 id="result-heading">Quiz Result</h1>
+            <div class="result">
+                <h2>Total Question: <span id="total-quest"></span></h2>
+                <h2>Right Answer: <span id="right-answer"></span></h2>
+                <h2>Wrong Answer: <span id="wrong-answer"></span></h2>
+                <h2>Score: <span id="total-score"></span></h2>
+            </div>
+            <div class="exit-box">
+                <button class="restart-btn">Again Quiz</button>
+                <button class="exit-btn">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
