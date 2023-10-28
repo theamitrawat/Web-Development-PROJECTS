@@ -83,7 +83,7 @@ function showQuestion() {
     nextBtn.addEventListener("click", function () {
       quizBox.classList.add("inactive");
       resultBox.classList.remove("inactive");
-      showResutl();
+      showResult();
     });
   }
   questionDetails = questions[currentQuestIndex];
@@ -138,7 +138,7 @@ nextBtn.addEventListener('click', () => {
   }
 });
 
-function showResutl() {
+function showResult() {
   totalQuest.innerHTML = questions.length;
   totalQuest.style.color = 'aqua';
   rightAnswer.innerHTML = right_answer;
@@ -147,4 +147,12 @@ function showResutl() {
   wrongAnswer.style.color = 'aqua';
   totalScore.innerHTML = (right_answer / questions.length) * 100 + "%";
   totalScore.style.color = 'aqua';
+}
+
+function restartGame() {
+  location.reload();
+}
+
+function exitGame() {
+  alert('Thank You');
 }
