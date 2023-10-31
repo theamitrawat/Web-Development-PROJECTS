@@ -11,20 +11,21 @@
         <div class="app-box">
             <h1>AGE CALCULATOR</h1>
             <div class="input-container">
-                <div class="input-box">
-                    <input type="date" id="date">
-                    i
-                </div>
-                <button>Calculate</button>
+                <input type="date" id="date">
+                <button id="calculate-btn" onclick="calculateAge()">Calculate</button>
             </div>
             <div class="age-data">
-                <p>Years - <span>21</span></p>
-                <p>months - <span>5</span></p>
-                <p>Days - <span>25</span></p>
+                <p>Years &nbsp;&nbsp;&nbsp; - &nbsp;<span id="calc_years">00</span></p>
+                <p>months - &nbsp;<span id="calc_months">00</span></p>
+                <p>Days &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;<span id="calc_days">00</span></p>
             </div>
         </div>
     </div>
     
-    <script src="scripts.js"></script>
+    <script src="scripts.js">
+
+let UserInput = document.getElementById('date');
+UserInput.max = new Date().toISOString().split("T")[0];
+    </script>
 </body>
 </html>
