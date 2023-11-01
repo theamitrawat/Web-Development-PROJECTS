@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <div class="message-box">
+            <blockquote id="quote-content">Loading....</blockquote>
+            <span id="quote-author">Loading.....</span>
+        </div>
+        <div class="btn">
+            <button id="quote-btn" onclick="getQuote(quotesURL)">New Quote</button>
+            <button id="tweet-btn" onclick="shareTweet()"><i class="fa-brands fa-twitter"></i> Tweet</button>
+        </div>
+    </div>
+
+    <script>
+        const quoteContent = document.querySelector("#quote-content");
+        const quoteAuthor = document.querySelector("#quote-author");
+
+        const quotesURL = "https://api.quotable.io/random";
+
+        async function getQuote(url) {
+
+            const quote = await fetch(url);
+            const data = await quote.json();
+            quoteContent.innerHTML = data.content;
+            quoteAuthor.innerHTML = data.author;
+        }
+
+        getQuote(quotesURL);
+
+        function shareTweet() {
+             window.open("https://twitter.com/intent/tweet?text=" + quoteContent.innerHTML + "         --by " + quoteAuthor.innerHTML, " Tweet Window", "width = 600, height = 300");
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
