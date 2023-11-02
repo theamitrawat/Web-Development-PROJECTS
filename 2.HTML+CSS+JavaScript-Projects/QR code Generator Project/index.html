@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>QR CODE GENERATOR</h1>
+        <div class="qr-box">
+            <h3>Enter Your Text Or URL:</h3>
+            <input type="text" placeholder="text or url" id="qr-text">
+            <img src="./Images/qrImage.png" id="qr-image" class="qr-image">
+            <button onclick="generateQr()">Generate&nbsp;<i class="fa-solid fa-qrcode"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let qrText = document.querySelector('#qr-text');
+        let qrImage = document.querySelector('#qr-image');
+
+        function generateQr() {
+            if (qrText.value.length > 0) {
+                qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+                qrImage.classList.add('show');
+                qrImage.classList.remove('error');
+            } else {
+                qrText.classList.add('error');
+                setTimeout(() => {
+                    qrText.classList.remove('error');
+                }, 1000);
+            }
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
