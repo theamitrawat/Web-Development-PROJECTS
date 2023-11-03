@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="back-icon"><i class="fa-solid fa-chevron-left"></i></div>
+            <h1>Now Playing</h1>
+            <div class="setting-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </nav>
+
+        <div class="album-image">
+            <img src="./media/singer.jpg">
+            
+        </div>
+
+        <div class="song-pannel">
+            <div class="add-icon">
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <div class="song-track">
+                <audio id="song">
+                    <source src="./media/song.mp3" type="audio/mp3">
+                </audio>
+                <div class="song-info">
+                    <h2>Balenciaga</h2>
+                    <p>ft.Akash, Fetty Wap, Lisa Mishra</p>
+                </div>
+                <input type="range" value="0" id="progress">
+            </div>
+    
+            <div class="control-pannel">
+                <div class="left-icon"><i class="fa-solid fa-caret-left"></i></div>
+                <div class="prev-icon"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="play-icon" onclick="playPause()"><i class="fa-solid fa-play" id="play"></i></div>
+                <div class="next-icon"><i class="fa-solid fa-forward-step"></i></div>
+                <div class="right-icon"><i class="fa-solid fa-caret-right"></i></div>
+            </div>
+            <div class="suffle-repeat"><i class="fa-solid fa-shuffle"></i></div>
+            <div class="headphones"><i class="fa-solid fa-headphones"></i></div>
+        </div>
+
+        <footer>
+            <div class="home"><i class="fa-solid fa-house"></i></div>
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="library"><i class="fa-solid fa-bars"></i></div>
+            <div class="like"><i class="fa-regular fa-heart"></i></div>
+        </footer>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
