@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Message</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="button-box">
+        <button class="primary-btn" onclick="showToast(primary_message)">Primary</button>
+        <button class="secondary-btn" onclick="showToast(secondary_message)">Secondary</button>
+        <button class="success-btn" onclick="showToast(success_message)">Success</button>
+        <button class="danger-btn" onclick="showToast(danger_message)">Danger</button>
+        <button class="warning-btn" onclick="showToast(warning_message)">Warning</button>
+        <button class="info-btn" onclick="showToast(info_message)">Info</button>
+        <button class="light-btn" onclick="showToast(light_message)">Light</button>
+        <button class="dark-btn" onclick="showToast(dark_message)">Dark</button>
+    </div>
+
+    <div class="toast-box"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
