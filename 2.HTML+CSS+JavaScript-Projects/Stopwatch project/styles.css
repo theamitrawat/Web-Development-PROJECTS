@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/back.jpg) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    gap: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 0 20px black;
+}
+
+.watch {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(30, 30, 34);
+    box-shadow: inset 0px 0px 20px 20px black;
+}
+
+ .watch #head {
+    font-size: 1.5rem;
+    color: #F1B6BA;
+}
+
+h2 {
+    border-radius: 20px;
+    font-size: 3rem;
+    color: #fff;
+} 
+
+.watch #foot{
+    font-size: 1.5rem;
+    color:#5BD0F3;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(30, 30, 34);
+    box-shadow: inset 0px 0px 20px black;
+    color: #F1B6BA;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px black);
+    color: #5BD0F3;
+}
+
+.clicked {
+    background-color: #F1B6BA;
+    color: black;
+}

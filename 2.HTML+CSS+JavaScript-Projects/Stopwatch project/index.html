@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>STOPWATCH USING JAVASCRIPT</h1>
+
+        <div class="watch">
+            <h3 id="head">Stopwatch</h3>
+            <h2 id="display">00 : 00 : 00</h2>
+            <h3 id="foot">D<i class="fa-solid fa-stopwatch"></i> It Again</h3>
+        </div>
+
+        <div class="control-btn">
+            <button onclick="watchStop()"><i class="fa-solid fa-stop" onclick="watchStop()"></i></button>
+            <button onclick="startWatch()"><i class="fa-solid fa-play" onclick="startWatch()"></i></button>
+            <button onclick="watchReset()"><i class="fa-solid fa-clock-rotate-left" onclick="watchReset()"></i></button>
+        </div>
+    </div>
+</body>
+
+<script>
+    let button = document.querySelector('button');
+    let seconds = 0;
+    let minutes = 0;
+    let hours = 0;
+    let display = document.getElementById('display');
+    let timer = null;
+
+    function Stopwatch() {
+        seconds++;
+        if (seconds == 60) {
+            seconds = 0;
+            minutes++;
+            if (minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+
+        let hr = hours < 10 ? "0" + hours : hours;
+        let min = minutes < 10 ? "0" + minutes : minutes;
+        let sec = seconds < 10 ? "0" + seconds : seconds;
+
+        display.innerHTML = hr + " : " + min + " : " + sec;
+    }
+
+    function startWatch() {
+        if (timer !== null) {
+            clearInterval(timer);
+        }
+        timer = setInterval(Stopwatch, 1000);
+    }
+
+    function watchStop() {
+        clearInterval(timer);
+    }
+
+    function watchReset() {
+        clearInterval(timer);
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        display.innerHTML = "00 : 00 : 00";
+    }
+
+</script>
+
+</html>
