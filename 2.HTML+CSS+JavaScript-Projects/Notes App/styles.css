@@ -9,7 +9,7 @@
 
 .container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: radial-gradient(circle, rgba(233,118,118,1) 0%, rgba(148,156,233,1) 100%);
     padding: 2% 4%;
 }
