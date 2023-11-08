@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px 0px #ffffff3b;
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.main-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  margin-top: -80px;
+  background-color: #0b2438;
+  color: #040404;
+  box-shadow: 0 0 10px 0px #ffffff3b;
+}
+
+.detail-box {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  font-size: 22px;
+  margin: 40px 0;
+  font-weight: 300;
+}
+
+.detail-box label {
+  text-align: left;
+}
+
+.contact-box {
+  width: 70%;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 5px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-weight: 300;
+}
+
+.contact-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+}
+
+.contact-box textarea {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+span {
+  font-size: 15px;
+  margin-left: auto;
+  color: red;
+  margin-left: 10px;
+}
+
+.contact-box span i{
+    color: green;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn {
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #040404;
+    background-color: #0B263B;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.submit-btn-focus{
+    color: #0B263B;
+    background-color: #040404;
+    box-shadow: 0 0 10px 0px #ffffff3b;
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
