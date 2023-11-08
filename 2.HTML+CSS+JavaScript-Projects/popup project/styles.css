@@ -8,10 +8,8 @@
 .container {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(4, 3, 42);
+    position: relative;
 }
 
 .btn {
@@ -23,6 +21,10 @@
     background-color:cornflowerblue;
     font-size: 2rem;
     font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .btn:hover{
@@ -44,6 +46,18 @@
     gap: 1.7rem;
     padding: 20px;
     border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .popup-box i{
@@ -73,8 +87,4 @@
 .popup-box button:hover{
     cursor: pointer;
     filter: drop-shadow(0 0 10px cornflowerblue);
-}
-
-.active {
-    display: none;
 }
