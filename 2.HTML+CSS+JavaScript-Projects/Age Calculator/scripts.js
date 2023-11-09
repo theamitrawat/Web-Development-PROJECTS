@@ -9,13 +9,13 @@ UserInput.max = new Date().toISOString().split("T")[0];
 function calculateAge() {
     let userDOB = new Date(UserInput.value);
 
-    let DOB_date = userDOB.getUTCDate();  // Get the day of the month
+    let DOB_date = userDOB.getUTCDate();  
     let DOB_month = userDOB.getUTCMonth() + 1;
     let DOB_year = userDOB.getUTCFullYear();
 
     let todayDate = new Date();
 
-    let current_date = todayDate.getUTCDate();  // Get the day of the month
+    let current_date = todayDate.getUTCDate();  
     let current_month = todayDate.getUTCMonth() + 1;
     let current_year = todayDate.getUTCFullYear();
 

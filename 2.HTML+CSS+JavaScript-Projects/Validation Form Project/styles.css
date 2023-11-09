@@ -131,6 +131,10 @@ span {
     font-weight: 700;
 }
 
+.submit-btn:hover{
+  box-shadow: 0 0 10px aqua;
+}
+
 .submit-btn-focus{
     color: #0B263B;
     background-color: #040404;
