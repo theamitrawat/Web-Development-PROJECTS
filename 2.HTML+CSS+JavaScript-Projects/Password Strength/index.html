@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="password-box">
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password"><i class="fa-solid fa-eye-slash eye"></i><button
+                    id="btn"><i class="fa-solid fa-share-from-square"></i></button>
+            </div>
+            <span id="strength-msg"></span>
+        </div>
+    </div>
+
+    <script>
+        let inputBox = document.querySelector('.input-box');
+        let password = document.getElementById('password');
+        let btn = document.getElementById('btn');
+        let msg = document.getElementById('strength-msg');
+        let eye = document.querySelector(".eye");
+
+        password.addEventListener('input', function () {
+            if (password.value.length > 0) {
+                msg.style.display = 'block';
+                
+            } else {
+                msg.style.display = 'none';
+            }
+
+            const hasAlphabets = /[a-zA-Z]/.test(password.value);
+            const hasNumbers = /[0-9]/.test(password.value);
+            const hasSymbols = /[!@#$%^&*()_+]/.test(password.value);
+
+            if (password.value.length < 6 || !(hasAlphabets && hasNumbers && hasSymbols)) {
+                msg.innerHTML = 'Password is weak';
+                msg.style.color = 'red';
+                inputBox.style.borderColor = 'red';
+            } else if (password.value.length >= 6 && password.value.length < 8) {
+                msg.innerHTML = 'Password is less strong';
+                msg.style.color = 'orange';
+                inputBox.style.borderColor = 'orange';
+            } else {
+                msg.innerHTML = 'Password is strong';
+                msg.style.color = 'green';
+                inputBox.style.borderColor = 'green';
+            }
+            setTimeout(()=>{
+                msg.style.display = 'none';
+            },4000);
+        });
+
+        
+        eye.onclick = function () {
+            if (password.type == "password") {
+                password.type = "text";
+                eye.classList.remove("fa-eye-slash");
+                eye.classList.add("fa-eye");
+            } else {
+                password.type = "password";
+                eye.classList.add("fa-eye-slash");
+                eye.classList.remove("fa-eye");
+            }
+        };
+    </script>
+</body>
+
+</html>

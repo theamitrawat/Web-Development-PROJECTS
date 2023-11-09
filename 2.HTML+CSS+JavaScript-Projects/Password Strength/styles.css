@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(90deg, rgba(40,39,38,1) 0%, rgba(62,61,65,1) 52%, rgba(91,92,94,1) 100%);
+}
+
+.password-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+button {
+    width: 45px;
+    height: 43px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 3px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgb(26, 26, 26);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: cyan;
+    filter: drop-shadow(0 0 5px currentcolor);
+}
+
+#strength-msg {
+    display: none;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.fa-eye-slash {
+    color: cornflowerblue;
+    font-size: 1.3rem;
+}
+
+.fa-eye{
+    color: coral;
+    font-size: 1.3rem;
+}
