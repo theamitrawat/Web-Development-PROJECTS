@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url(back.jpg) no-repeat center;
+    background-size: cover;
+    padding: 0 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+img {
+    width: 10vw;
+    height: 20vh;
+    animation:bounce 2s linear infinite alternate ;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-40vh);
+        filter: drop-shadow(0 0 10px black);
+    }
+    50% {
+        transform: translateY(35vh) scale(1.2);
+        filter: drop-shadow(0 0 10px red);
+    }
+    100% {
+        transform: translateY(-40vh);
+        filter: drop-shadow(0 0 10px blue);
+    }
+}
+
+.launch-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: gray;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px blue;
+    color: blue;
+    background-color: black;
+}
+
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-weight: 500;
+}
+
+.time div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time div h1 {
+    color: midnightblue;
+}

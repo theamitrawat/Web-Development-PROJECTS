@@ -63,9 +63,9 @@ select {
     outline: none;
     box-shadow: 0 0 10px black;
     background-color: dimgray;
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 700;
-    padding: 0 10px;
+    padding-left: 10px;
     appearance: none;
 }
 
