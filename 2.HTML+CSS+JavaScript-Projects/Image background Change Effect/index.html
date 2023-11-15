@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Effect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-box">
+            <img src="transparent.png" width="100%">
+            <div class="img-wrap">
+                <img src="original.jpg" id="org-image">
+            </div>
+            <span id="line">
+                <img src="arrow.png" class="arrow">
+            </span>
+        </div>
+    </div>
+
+    <script>
+        let ImgBox = document.querySelector('.img-box');
+        let ImgWrap = document.querySelector('.img-wrap');
+        let OrgImage = document.getElementById('org-image');
+        let line = document.getElementById('line');
+
+        OrgImage.style.width = ImgBox.offsetWidth + "px";
+
+        let leftSpace = ImgBox.offsetLeft;
+
+        ImgBox.onmousemove = (e) => {
+            let boxWidth = (e.pageX - leftSpace) + "px";
+            ImgWrap.style.width = boxWidth;
+            line.style.left = boxWidth;
+        }
+    </script>
+</body>
+
+</html>
