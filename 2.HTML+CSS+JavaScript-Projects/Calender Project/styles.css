@@ -10,7 +10,7 @@
 .container {
     width: 100vw;
     height: 100vh;
-    background-color:lightslategray;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
