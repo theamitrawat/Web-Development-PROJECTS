@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calender">
+            <div class="left">
+                <p class="day">10</p>
+                <p class="week">Monday</p>
+            </div>
+            <div class="right">
+                <p class="month">November</p>
+                <p class="year">2023</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let date = document.querySelector('.day');
+        let day = document.querySelector('.week');
+        let month = document.querySelector('.month');
+        let year = document.querySelector('.year');
+
+        let today = new Date();
+        const weeks = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+
+        const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+        date.innerHTML = today.getDate();
+        day.innerHTML = weeks[today.getDay()];
+        month.innerHTML = months[today.getMonth()];
+        year.innerHTML = today.getFullYear();
+    </script>
+</body>
+
+</html>
