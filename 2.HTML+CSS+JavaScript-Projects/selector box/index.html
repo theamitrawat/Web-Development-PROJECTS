@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Box</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="select-box">
+            <div class="select-field">
+                <p id="select-msg">Select Social Media</p>
+                <i class="fa-solid fa-angle-down" id="arrowIcon"></i>
+            </div>
+
+            <ul id="list" class="hide">
+                <li class="options"><i class="fa-brands fa-facebook" style="color: #1877f2;"></i> Facebook</li>
+                <li class="options"><i class="fa-brands fa-square-instagram" style="color: #c32aa3;"></i> Instagram</li>
+                <li class="options"><i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i> linkedIn</li>
+                <li class="options"><i class="fa-brands fa-square-x-twitter" style="color: black;"></i> Twitter</li>
+                <li class="options"><i class="fa-brands fa-square-threads" style="color: black;"></i> Thread</li>
+                <li class="options"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/94e9144b27.js" crossorigin="anonymous"></script>
+
+    <script>
+        let SelectField = document.querySelector('.select-field');
+        let arrowIcon = document.getElementById('arrowIcon');
+        let hide = document.querySelector('.hide');
+        let options = document.getElementsByClassName('options');
+        let selectMsg = document.getElementById('select-msg');
+        let list = document.getElementById('list');
+
+        SelectField.addEventListener('click', function () {
+            list.classList.toggle('hide');
+            arrowIcon.classList.toggle('rotateIcon');
+        });
+
+        for (let option of options) {
+            option.addEventListener('click', function () {
+                selectMsg.textContent = this.textContent;
+                list.classList.toggle('hide');
+            });
+        }
+
+    </script>
+</body>
+
+</html>
