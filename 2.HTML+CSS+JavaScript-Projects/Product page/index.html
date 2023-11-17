@@ -92,10 +92,8 @@
 
         for (let i = 0; i < changeBtn.length; i++) {
             changeBtn[i].addEventListener('click', function () {
-                const imagePath = `./images/main${i + 1}.jpg`; // Assuming image paths follow a pattern
-
+                const imagePath = `./images/main${i + 1}.jpg`;
                 image.src = imagePath;
-
                 for (let btn of changeBtn) {
                     btn.classList.remove('active');
                 }
