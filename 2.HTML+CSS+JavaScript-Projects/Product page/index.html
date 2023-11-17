@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Design Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-box">
+            <div class="img-box">
+                <img src="./images/main1.jpg">
+                <div class="change-box">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details-box">
+                <h1>Men's T-shirt</h1>
+                <h2>Rs.499</h2>
+                <h3>Included All Taxes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga obcaecati doloribus atque suscipit
+                    error, est delectus sapiente enim provident quod quam inventore mollitia, nisi harum.</p>
+
+                <div class="size-box">
+                    <p>Size</p>
+                    <label for="small">
+                        <input type="radio" name="size" id="small">
+                        <span>S</span>
+                    </label>
+                    <label for="medium">
+                        <input type="radio" name="size" id="medium">
+                        <span>M</span>
+                    </label>
+                    <label for="large">
+                        <input type="radio" name="size" id="large">
+                        <span>L</span>
+                    </label>
+                    <label for="x-large">
+                        <input type="radio" name="size" id="x-large">
+                        <span>XL</span>
+                    </label>
+                    <label for="xx-large">
+                        <input type="radio" name="size" id="xx-large">
+                        <span>XXL</span>
+                    </label>
+                </div>
+
+                <div class="color-box">
+                    <p>Color</p>
+                    <label for="red">
+                        <input type="radio" name="color" id="red">
+                        <span class="color-1"> </span>
+                    </label>
+                    <label for="yellow">
+                        <input type="radio" name="color" id="yellow">
+                        <span class="color-2"></span>
+                    </label>
+                    <label for="green">
+                        <input type="radio" name="color" id="green">
+                        <span class="color-3"></span>
+                    </label>
+                    <label for="blue">
+                        <input type="radio" name="color" id="blue">
+                        <span class="color-4"></span>
+                    </label>
+                    <label for="black">
+                        <input type="radio" name="color" id="black">
+                        <span class="color-5"></span>
+                    </label>
+                </div>
+
+                <div class="quantity-box">
+                    <p>Quantity</p>
+                    <input type="number" value="1">
+                </div>
+
+                <button onclick="clickBtn()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelector('button');
+        let image = document.querySelector('img');
+        let changeBtn = document.getElementsByClassName('btn');
+
+        for (let i = 0; i < changeBtn.length; i++) {
+            changeBtn[i].addEventListener('click', function () {
+                const imagePath = `./images/main${i + 1}.jpg`; // Assuming image paths follow a pattern
+
+                image.src = imagePath;
+
+                for (let btn of changeBtn) {
+                    btn.classList.remove('active');
+                }
+                changeBtn[i].classList.add('active');
+            });
+        }
+
+        function clickBtn() {
+            button.classList.add('click')
+            setTimeout(() => {
+                button.classList.remove('click')
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
