@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="list-container">
+            <div class="left-box box">
+                <div class="file" draggable="true">Document 1</div>
+                <div class="file" draggable="true">Document 2</div>
+                <div class="file" draggable="true">Document 3</div>
+                <div class="file" draggable="true">Document 4</div>
+                <div class="file" draggable="true">Document 5</div>
+                <div class="file" draggable="true">Document 6</div>
+            </div>
+            <div class="right-box box"></div>
+        </div>
+    </div>
+
+    <script>
+        let files = document.getElementsByClassName('file');
+        let leftBox = document.querySelector('.left-box');
+        let rightBox = document.querySelector('.right-box');
+
+        for(file of files) {
+            file.addEventListener("dragstart", function(e){
+                let selectedFile = e.target;
+
+                rightBox.addEventListener('dragover', function(e){
+                    e.preventDefault();
+                });
+
+                rightBox.addEventListener('drop', function(e){
+                    rightBox.appendChild(selectedFile);
+                    selectedFile = null;
+                });
+
+                leftBox.addEventListener('dragover', function(e){
+                    e.preventDefault();
+                });
+
+                leftBox.addEventListener('drop', function(e){
+                    leftBox.appendChild(selectedFile);
+                    selectedFile = null;
+                });
+            });
+        }
+    </script>
+</body>
+</html>
