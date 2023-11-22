@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #e4f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.clock-box {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+    padding: 40px;
+}
+
+.clock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+span {
+    font-size: 5rem;
+    font-weight: 900;
+    color: red;
+}
