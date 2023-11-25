@@ -3,7 +3,7 @@ const typed = new Typed('#heading', {
     typeSpeed: 70,
 });
 
-const accessKey = 'ACCESS_KEY';
+const accessKey = 'CP9QGcy9mKQbtYf2ToLR8r-uziel86nSRXzMppFDAuM';
 
 const searchContainer = document.querySelector('.search-container');
 const searchResult = document.querySelector('.image-container');
