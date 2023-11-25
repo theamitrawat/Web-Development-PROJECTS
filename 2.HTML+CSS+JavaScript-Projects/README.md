@@ -78,7 +78,7 @@ https://github.com/theamitrawat/Web-Development-PROJECTS/assets/136779130/2da0e8
 
 # 12. PASSWORD BOX <br><br>
 ## DEMO VIDEO<br><br>
-
+https://github.com/theamitrawat/Web-Development-PROJECTS/assets/136779130/68c5ed3a-6fe8-4fe2-b233-6ca5db7d3d4d
 ## SCREENSHOT<br><br>
 ![password visibility](https://github.com/theamitrawat/Web-Development-PROJECTS/assets/136779130/d5eeffde-070e-4ea9-885e-4b2807282745)
 <br><br><br>
@@ -134,7 +134,7 @@ https://github.com/theamitrawat/Web-Development-PROJECTS/assets/136779130/f3899b
 
 # 20. STOPWATCH<br><br>
 ## DEMO VIDEO<br><br>
-
+https://github.com/theamitrawat/Web-Development-PROJECTS/assets/136779130/0e4a5ac6-3867-49ae-b34b-9ddca5041ca8
 ## SCREENSHOT<br><br>
 ![stopwatch](https://github.com/theamitrawat/Web-Development-PROJECTS/assets/136779130/6a1f4a58-ab15-4516-a7ae-01a978cffc44)
 <br><br><br>
